@@ -2,6 +2,17 @@
 """
 A simple webhook listener for ngrok events.
 This script creates a FastAPI server that listens on port 3000 and prints all incoming events.
+
+Dependencies:
+- fastapi
+- uvicorn
+- python-multipart (for form data)
+
+Install with Poetry:
+    poetry install
+
+Or with pip:
+    pip install fastapi uvicorn python-multipart
 """
 
 import json
