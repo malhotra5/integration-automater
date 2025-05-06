@@ -1,6 +1,8 @@
-# integration-automater
+# integration-automater using openhands api
 
-Script to automate building integrations
+This repo helps you automate building integrations using the openhands api
+
+It receives webhook payloads from the integration, and sends that details to an openhands agent. The agent will inspect the payload and build an integration that can handle the payload format, details, etc.
 
 ## Webhook Listener
 
