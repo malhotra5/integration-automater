@@ -1,4 +1,5 @@
 # integration-automater
+
 Script to automate building integrations
 
 ## Webhook Listener
@@ -23,11 +24,13 @@ poetry install
 ### Usage
 
 1. Start your ngrok tunnel pointing to port 3000:
+
    ```bash
    ngrok http 3000
    ```
 
 2. Run the webhook listener:
+
    ```bash
    poetry run python listen.py
    ```
@@ -37,7 +40,6 @@ poetry install
 ### Features
 
 - Listens on port 3000 for incoming webhook events
-- Handles all HTTP methods (GET, POST, PUT, DELETE, PATCH)
 - Supports JSON, form data, and raw request bodies
 - Prints detailed information about each request including:
   - Timestamp
